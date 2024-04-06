@@ -1,0 +1,42 @@
+---
+title: О нас
+call_to_action: Contact
+background_image_path:
+large_header: false
+show_in_navigation: true
+navigation_order: 1
+---
+
+<div class="editable">
+	<p>
+		Чтобы по-настоящему эффективно создавать ценность, нужно строить «машину», которая позволит масштабировать то, что ты делаешь. Так создаются бизнесы, компании, корпорации. Пути два - либо делегирование, либо автоматизация. В современном мире эффективно сочетаются два этих метода. Поэтому каждый современный бизнес - это сочетание и коллектива людей, и технических платформ и систем автоматизации.
+	</p>
+	<p>
+		Мы помогаем бизнесам строить и поддерживать такие сложные системы, состоящие из людей, технических систем и средств автоматизации, то есть социотехнические системы.
+	</p>
+
+	<p>Meet the members of our capable team:</p>
+</div>
+
+<p class="editor-link"><a href="cloudcannon:collections/_staff_members" class="btn"><strong>&#9998;</strong> Update Staff Members</a></p>
+
+<ul class="staff-list">
+	{% for member in site.staff_members %}
+		<li class="staff">
+			<div class="staff-details">
+				<div class="staff-image">
+					<img src="{{ member.image }}" alt="Staff photo for {{ member.name }}" width="120" height="120">
+				</div>
+				<ul class="staff-info">
+					<li>{{ member.name }}</li>
+					<li><small>{{ member.credentials }}</small></li>
+					<li><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.phone }}</a>  ext {{ member.phone_extension }}</li>
+				</ul>
+			</div>
+
+			<div class="staff-bio">
+				<p>{{ member.content | markdownify }}</p>
+			</div>
+		</li>
+	{% endfor %}
+</ul>

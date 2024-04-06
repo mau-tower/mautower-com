@@ -1,0 +1,35 @@
+---
+title: Кейсы
+call_to_action: Contact
+background_image_path:
+large_header: false
+show_in_navigation: true
+navigation_order: 3
+---
+
+<div class="editable">
+	<p>
+		Кейсы и примеры эффективности нашей работы. Что мы делали. Что мы делаем. Что конкретное мы можем предложить.
+	</p>
+</div>
+
+<p class="editor-link"><a href="cloudcannon:collections/_cases_categories" class="btn"><strong>&#9998;</strong> Update Cases Categories</a></p>
+
+<ul class="staff-list">
+        {% for category in site.cases_categories %}
+                <li class="staff">
+                        <div class="staff-details">
+                                <div class="staff-image">
+                                        <img src="{{ category.image }}" alt="Pic for {{ category.title }}" width="120" height="120">
+                                </div>
+                                <ul class="staff-info">
+                                        <li><a href="{{ category.url }}">{{ category.title }}</a></li>
+                                </ul>
+                        </div>
+
+                        <div class="staff-bio">
+                                <p>{{ category.content | markdownify }}</p>
+                        </div>
+                </li>
+        {% endfor %}
+</ul>

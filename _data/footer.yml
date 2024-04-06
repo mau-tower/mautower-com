@@ -1,0 +1,34 @@
+- title: Страницы
+  links:
+    - name: Home
+      link: /
+    - name: О нас
+      link: /about/
+    - name: Услуги
+      link: /services/
+    - name: Контакты
+      link: /contact/
+    - name: Блог
+      link: /blog/
+- title: Social
+  links:
+#    - name: Facebook
+#      link: http://facebook.com/cloudcannon/
+#      social_icon: Facebook
+#      new_window: true
+#    - name: Twitter
+#      link: http://twitter.com/cloudcannon
+#      social_icon: Twitter
+#      new_window: true
+#    - name: Instagram
+#      link: http://instagram.com/
+#      social_icon: Instagram
+#      new_window: true
+#    - name: LinkedIn
+#      link: https://nz.linkedin.com/company/cloud-cannon/
+#      social_icon: LinkedIn
+#      new_window: true
+    - name: Telegram
+      link: https://t.me/mau_tower
+      social_icon: Telegram
+      new_window: true

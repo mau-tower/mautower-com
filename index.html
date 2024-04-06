@@ -1,0 +1,41 @@
+---
+title:
+call_to_action: Contact
+background_image_path:
+large_header: true
+testimonials:
+  - message: «Предпринимательство — это не наука и не искусство. Это практика».
+    image: "https://smartreading.ru/uploads/authors/86639dee-da62-4142-9e14-cd8b7c903d55.jpg"
+    name: Питер Друкер
+  - message: «Цель маркетинга — сделать усилия по сбыту ненужными. Его цель — так хорошо познать и понять клиента, что товар или услуга будут точно подходить последнему и продавать себя сами».
+    image: "https://simg.marwin.kz/media/astrio_personaly/personaly_image/Piter-Druker_1_.png"
+    name: Питер Друкер
+  - message: Секрет Кошачьих в том, что они не делают доклады о работе, а <strong>работают</strong>.
+    image: "https://img.freepik.com/free-photo/grey-kitty-with-monochrome-wall-behind-her_23-2148955113.jpg?w=1800&t=st=1711673017~exp=1711673617~hmac=c1144b4f1c28e5b3ba34824254b2a35b5f1942eb5b4fcb98c76407a49bfad60e" 
+    name: Хайнц Катцен
+_options:
+  image:
+    width: 60
+    height: 60
+---
+
+<div class="editable">
+<!--
+https://img.freepik.com/premium-photo/studio-portrait-of-a-beautiful-grey-cat-on-dark-wall-pet-mammal-animal-predator_158518-3440.jpg?size=626&ext=jpg
+	<p>This is the <strong>Justice</strong> template from <a href="https://cloudcannon.com/">CloudCannon</a>. Justice is strong foundation for the web presence of a law firm or business. It's filled with fictitious example content to get you started.</p>
+
+	<p>Justice Law is professional representation. Practicing for over 50 years, our team have the knowledge and skills to get you results.</p>
+-->
+	<p>Чтобы по-настоящему эффективно создавать ценность, нужно строить «машину», которая позволит масштабировать то, что ты делаешь. Так создаются бизнесы, компании, корпорации. Пути два — либо делегирование, либо автоматизация. В современном мире эффективно сочетаются два этих метода. Поэтому каждый современный бизнес - это сочетание и коллектива людей, и технических платформ и систем автоматизации.</p>
+
+	<p>Мы помогаем бизнесам строить и поддерживать такие сложные системы, состоящие из людей, технических систем и средств автоматизации, то есть социотехнические системы.</p>
+</div>
+
+<div class="testimonials">
+	{% for testimonial in page.testimonials %}
+		<blockquote class="testimonial">
+			<p class="testimonial-message">{{ testimonial.message }}</p>
+			<p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p>
+		</blockquote>
+	{% endfor %}
+</div>
