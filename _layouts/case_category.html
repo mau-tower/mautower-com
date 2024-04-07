@@ -1,0 +1,18 @@
+---
+layout: page
+---
+
+<div>{{ content }}</div>
+
+{% assign name = page.name | remove: ".md" %}
+{% for case in site.cases %}
+	{% if case.categories contains name %}
+	  <h3>
+		<a href="{{ case.url }}">
+		  {{ case.title }}
+		</a>
+	  </h3>
+	  <p>{{ case.content | markdownify }}</p>
+	<p><img src="https://unsplash.it/960/350?image=668" width="960" height="350" alt="IT image"></p>
+	{% endif %}
+{% endfor %}

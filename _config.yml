@@ -70,8 +70,9 @@ defaults:
   -
     scope:
       path: ""
-      type: "cases"
+      type: "cases_categories"
     values:
+      layout: case_category
       _options:
         image:
           width: 440
