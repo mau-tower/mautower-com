@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Justice Template
-url: "https://orchid-heron.cloudvent.net"
+title: MAU TOWER
+url: "https://mautower.com"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -10,10 +10,10 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Jekyll template with example content for a law firm.
+description: Гиперавтоматизация. Котороботы. Киберцентры
 author:
   name:
-  email:
+  email: adm@mautower.com
   twitter: # twitter username without the @ symbol
 social:
   name: Justice Template
