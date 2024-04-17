@@ -28,7 +28,7 @@ navigation_order: 3
                         </div>
 
                         <div class="staff-bio">
-                                <p>{{ category.content | markdownify }}</p>
+                                <p>{{ category.subtitle | default: category.content | markdownify }}</p>
                         </div>
                 </li>
         {% endfor %}
