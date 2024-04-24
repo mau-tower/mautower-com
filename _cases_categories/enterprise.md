@@ -1,7 +1,7 @@
 ---
 title: Крупный и средний бизнес
 image: "https://unsplash.it/440/440?image=898"
-subtitle: Наша работа с крупным и средним бизнесом
+subtitle: Наша работа с крупным и средним бизнесом.
 navigation_order: 3
 ---
 
