@@ -376,3 +376,18 @@ footer {
 	@extend .testimonial-author;
 	margin: 1em 0;
 }
+
+table {
+	width: 90%;
+	margin: auto;
+
+	td {
+		border-bottom: 1px solid #ddd;
+	}
+
+	tr:nth-child(even) {background-color: #f2f2f2;}
+
+	tr td:nth-child(2) {
+		text-align: right;
+	}
+}
