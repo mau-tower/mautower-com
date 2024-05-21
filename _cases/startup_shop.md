@@ -1,6 +1,6 @@
 ---
 title: Товарный агрегатор
-date: 2025-06-15 00:00:00
+date: 2023-06-15 00:00:00
 categories:
   - startup
 image: "https://images.pexels.com/photos/7927389/pexels-photo-7927389.jpeg?auto=compress&cs=tinysrgb&w=600"
