@@ -6,6 +6,10 @@
       link: /about/
     - name: Услуги
       link: /services/
+    - name: Кейсы
+      link: /cases/
+    - name: О ценах
+      link: /price/
     - name: Контакты
       link: /contact/
     - name: Блог
