@@ -24,7 +24,8 @@
 									{% if nav_page.path contains 'blog' %}
 										{% assign blog_showed = true %}
 									{% endif %}
-									<li><a {% if nav_page.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ nav_page.url }}">{{ nav_page.title }}</a></li>
+									{% assign short_url = nav_page.url | remove: "/" %}
+									<li><a {% if page.url contains short_url %}class="active"{% endif %} href="{{ site.baseurl }}{{ nav_page.url }}">{{ nav_page.title }}</a></li>
 								{% endif %}
 							{% endif %}
 						{% endfor %}

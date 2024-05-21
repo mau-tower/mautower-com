@@ -28,6 +28,7 @@ timezone: Etc/UTC
 
 paginate: 4
 paginate_path: "/blog/:num/"
+permalink: blog/:categories/:year/:month/:day/:title/
 
 collections:
    "staff_members":
@@ -78,9 +79,6 @@ defaults:
         image:
           width: 440
           height: 440
-
-
-permalink: pretty
 
 jekyll-archives:
   enabled:
