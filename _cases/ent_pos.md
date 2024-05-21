@@ -1,5 +1,7 @@
 ---
 title: Интеграция инновационной POS-системы для крупнейшей торговой сети
+layout: case
+call_to_action: Contact
 date: 2017-06-10 00:00:00
 categories:
   - enterprise

@@ -1,5 +1,7 @@
 ---
 title: Разработка киберцентра для компании из TOP20 российского Forbes
+layout: case
+call_to_action: Contact
 date: 2018-08-10 00:00:00
 categories:
   - enterprise

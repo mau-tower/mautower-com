@@ -1,6 +1,7 @@
 ---
 title: Частные лица и малый бизнес
 subtitle: Наша работа с клиентами — частными лицами, предпринимателями и малым бизнесом.
+call_to_action: Contact
 image: "https://unsplash.it/440/440?image=946"
 navigation_order: 1
 ---

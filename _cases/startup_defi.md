@@ -1,5 +1,7 @@
 ---
 title: Система взаиморасчётов на основе DeFi
+layout: case
+call_to_action: Contact
 date: 2023-01-22 00:00:00
 categories:
   - startup

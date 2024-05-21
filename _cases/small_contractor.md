@@ -1,5 +1,7 @@
 ---
 title: Договор для IT-специалиста
+layout: case
+call_to_action: Contact
 date: 2020-08-16 00:00:00
 categories:
   - small

@@ -1,5 +1,7 @@
 ---
 title: Создание центра fintech-компетенций в структуре крупного финансового холдинга
+layout: case
+call_to_action: Contact
 date: 2013-06-10 00:00:00
 categories:
   - enterprise

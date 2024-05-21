@@ -2,6 +2,7 @@
 title: Стартапы
 image: "https://unsplash.it/440/440?image=896"
 subtitle: Наша работа со стартапами и начинающим бизнесом.
+call_to_action: Contact
 navigation_order: 2
 ---
 

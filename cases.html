@@ -15,21 +15,4 @@ navigation_order: 3
 
 <p class="editor-link"><a href="cloudcannon:collections/_cases_categories" class="btn"><strong>&#9998;</strong> Update Cases Categories</a></p>
 
-<ul class="staff-list">
-        {% for category in site.cases_categories %}
-                <li class="staff">
-                        <div class="staff-details">
-                                <div class="staff-image">
-                                        <a href="{{ category.url }}"><img src="{{ category.image }}" alt="Pic for {{ category.title }}" width="120" height="120"></a>
-                                </div>
-                                <ul class="staff-info">
-                                        <li><a href="{{ category.url }}">{{ category.title }}</a></li>
-                                </ul>
-                        </div>
-
-                        <div class="staff-bio">
-                                <p>{{ category.subtitle | default: category.content | markdownify }}</p>
-                        </div>
-                </li>
-        {% endfor %}
-</ul>
+{% include cases.html %}

@@ -1,5 +1,7 @@
 ---
 title: Помощь при запуске сервиса для яхт
+layout: case
+call_to_action: Contact
 date: 2023-07-15 00:00:00
 categories:
   - small

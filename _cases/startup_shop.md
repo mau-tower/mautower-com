@@ -1,5 +1,7 @@
 ---
 title: Товарный агрегатор
+layout: case
+call_to_action: Contact
 date: 2023-06-15 00:00:00
 categories:
   - startup
