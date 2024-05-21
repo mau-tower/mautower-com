@@ -1,46 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		{% seo %}
-		{% feed_meta %}
-
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Quattrocento|Vollkorn:400,400i,700,700i">
-		<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
-		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
-
-		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
-			<script>
-				window.dataLayer = window.dataLayer || [];
-
-				function gtag() {
-					dataLayer.push(arguments);
-				}
-
-				gtag('consent', 'default', {
-					'ad_storage': 'granted',
-					'analytics_storage': 'granted'
-				});
-			</script>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id={{google_analytics_key}}"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-
-				function gtag() {
-					dataLayer.push(arguments);
-				}
-
-				gtag('js', new Date());
-				gtag('config', '{{google_analytics_key}}');
-			</script>
-		{% endif %}
-	</head>
+{% include head.html %}
 
 	<body>
 		<header style="background-image: url('{% include relative-src.html src=page.background_image_path %}');" {% if page.large_header %}class="main-hero"{% endif %}>
@@ -98,51 +59,7 @@
 			</section>
 		{% endif %}
 
-		<footer>
-			<div class="container">
-				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Update Footer Sections</a></p>
-
-				<div class="footer-columns">
-					{% for column in site.data.footer %}
-						<ul class="footer-links">
-							<li>
-								<h2>{{ column.title }}</h2>
-							</li>
-							{% for link in column.links %}
-								<li>
-									<a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
-										{% if link.social_icon %}
-											{% include social-icon.html icon=link.social_icon %}
-										{% endif %}
-
-										{{ link.name }}
-									</a>
-								</li>
-							{% endfor %}
-						</ul>
-					{% endfor %}
-
-					<ul class="footer-links">
-						<li>
-							<h2>{{ site.data.company.title }}</h2>
-						</li>
-						<li>{{ site.data.company.description }}</li>
-						<li><a href="{{ site.baseurl }}/feed.xml">{% include social-icon.html icon="RSS" %} Subscribe with RSS</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="legal-line">
-				<p class="container">
-					&copy; {{ site.time | date: '%Y' }} {{ site.data.company.title }} &bull;
-					<a href="{{ site.baseurl }}/naming/">О названии</a>
-					&bull;
-					<a href="{{ site.baseurl }}/privacy/">Privacy policy</a>
-					&bull;
-					Template by <a href="http://cloudcannon.com/">CloudCannon</a>
-				</p>
-			</div>
-		</footer>
+		{% include footer.html %}
 		{% if site.use_cookie_consent and jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			{% include cookies_consent.html %}
 		{% endif %}
