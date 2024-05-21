@@ -13,13 +13,13 @@ use_cookie_consent:
 logo: /siteicon.png
 description: Гиперавтоматизация. Котороботы. Киберцентры
 author:
-  name:
+  name: MAU TOWER
   email: adm@mautower.com
   twitter: # twitter username without the @ symbol
 social:
-  name: Justice Template
+  name: MAU TOWER
   links:
-    - https://github.com/CloudCannon/justice-jekyll-template
+    - https://mautower.com
 
 # -----
 # Build
