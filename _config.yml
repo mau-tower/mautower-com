@@ -7,6 +7,7 @@ baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
+use_cookie_consent:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
@@ -25,7 +26,7 @@ social:
 
 timezone: Etc/UTC
 
-paginate: 1
+paginate: 4
 paginate_path: "/blog/:num/"
 
 collections:

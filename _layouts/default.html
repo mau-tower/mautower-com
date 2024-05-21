@@ -16,11 +16,29 @@
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
-				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-				ga('create', '{{ site.google_analytics_key }}', 'auto');
-				ga('send', 'pageview');
+				window.dataLayer = window.dataLayer || [];
+
+				function gtag() {
+					dataLayer.push(arguments);
+				}
+
+				gtag('consent', 'default', {
+					'ad_storage': 'granted',
+					'analytics_storage': 'granted'
+				});
 			</script>
-			<script async src='https://www.google-analytics.com/analytics.js'></script>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id={{google_analytics_key}}"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+
+				function gtag() {
+					dataLayer.push(arguments);
+				}
+
+				gtag('js', new Date());
+				gtag('config', '{{google_analytics_key}}');
+			</script>
 		{% endif %}
 	</head>
 
@@ -125,5 +143,8 @@
 				</p>
 			</div>
 		</footer>
+		{% if site.use_cookie_consent and jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			{% include cookies_consent.html %}
+		{% endif %}
 	</body>
 </html>

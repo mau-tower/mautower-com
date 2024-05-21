@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.addEventListener('load', function(){
+  window.cookieconsent.initialise({
+   revokeBtn: "<div class='cc-revoke'></div>",
+   type: "opt-in",
+   position: "bottom-right",
+   theme: "classic",
+   palette: {
+       popup: {
+           background: "#3A4145",
+           text: "#fff"
+        },
+       button: {
+           background: "#eee",
+           text: "#000",
+           hover: "#fff"
+        }
+    },
+   content: {
+       link: "About consent",
+       href: "{{ site.baseurl }}/cookies"
+    },
+    onInitialise: function(status) {
+      if(status === cookieconsent.status.allow) {
+            updateCookiesConsentForIncludes(true);
+      }
+    },
+    onStatusChange: function(status) {
+       updateCookiesConsentForIncludes(this.hasConsented());
+    }
+  })
+});
+
+function updateCookiesConsentForIncludes(hasConsented) {
+
+        if (hasConsented) {
+            gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+            });
+        } else {
+            gtag('consent', 'update', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied'
+            });
+        }
+}
+</script>
