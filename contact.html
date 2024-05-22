@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Контакты
 call_to_action: Map
 background_image_path:
 large_header: false
@@ -12,24 +12,40 @@ map:
 ---
 
 <p class="editable">
-	Come see us in person, give us a call, or send us a message with your details and we'll be in contact shortly after. No obligations and your first meeting is free.
+	Добавьте нас в соцсетях и мессенджерах, позвоните нам или отправьте нам сообщение, и мы свяжемся с вами в самое ближайшее время. Мы сможем подготовить нашу первую встречу для консультации, на которой вы расскажите о своих проблемах и задачах, и мы сможем определить шаги по помощи вам совершенно бесплатно.
 </p>
 
 <div class="columns">
 	<div class="column">
 		<p class="editor-link"><a href="cloudcannon:collections/_data/company.yml" class="btn"><strong>&#9998;</strong> Update Company Details</a></p>
-
-		<label>Phone Number</label>
-		<p class="contact-info"><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.phone }}</a></p>
-
-		<label>Email Address</label>
-		<p class="contact-info"><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
-
-		<label>Postal Address</label>
-		<address class="contact-info">{{ site.data.company.postal_address | replace: ',', '<br>' }}</address>
-		<label>Address</label>
-		<address class="contact-info">{{ site.data.company.address | replace: ',', '<br>' }}</address>
+		{% if site.data.company.phone %}
+			<label>Phone Number</label>
+			<p class="contact-info"><a href="tel:{{ site.data.company.phone }}" target="_blank">{{ site.data.company.phone }}</a></p>
+		{% endif %}
+		{% if site.data.company.contact_email_address %}
+			<label>Email Address</label>
+			<p class="contact-info"><a href="mailto:{{ site.data.company.contact_email_address }}" target="_blank">{{ site.data.company.contact_email_address }}</a></p>
+		{% endif %}
+		{% if site.data.company.postal_address %}
+			<label>Postal Address</label>
+			<address class="contact-info">{{ site.data.company.postal_address | replace: ',', '<br>' }}</address>
+		{% endif %}
+		{% if site.data.company.address %}
+			<label>Address</label>
+			<address class="contact-info">{{ site.data.company.address | replace: ',', '<br>' }}</address>
+		{% endif %}
 	</div>
+	<div class="column">
+		{% if site.data.company.telegram %}
+			<label>Telegram приёмная</label>
+			<p class="contact-info"><a href="https://t.me/{{ site.data.company.telegram }}" target="_blank">@{{ site.data.company.telegram }}</a></p>
+		{% endif %}
+		{% if site.data.company.telegram_channel %}
+			<label>Telegram канал</label>
+			<p class="contact-info"><a href="https://t.me/{{ site.data.company.telegram_channel }}" target="_blank">@{{ site.data.company.telegram_channel }}</a></p>
+		{% endif %}
+	</div>
+	{% comment %}
 	<div class="column">
 		<form method="post" action="/contact-success/">
 			<label for="email_address">Email Address</label>
@@ -47,6 +63,7 @@ map:
 			<input type="submit" value="Send Message">
 		</form>
 	</div>
+	{% endcomment %}
 </div>
 
 
