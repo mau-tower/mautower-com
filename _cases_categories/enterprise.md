@@ -1,7 +1,7 @@
 ---
 title: Крупный и средний бизнес
 call_to_action: Contact
-image: "https://unsplash.it/605/440?image=411"
+image: "/uploads/pexels/pexels-photo-261621.jpeg"
 subtitle: Наша работа с крупным и средним бизнесом.
 navigation_order: 3
 ---

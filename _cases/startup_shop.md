@@ -5,7 +5,7 @@ call_to_action: Contact
 date: 2023-06-15 00:00:00
 categories:
   - startup
-image: "https://images.pexels.com/photos/7927389/pexels-photo-7927389.jpeg?auto=compress&cs=tinysrgb&w=600"
+image: "/uploads/pexels/600/pexels-photo-3771129.jpeg"
 ---
 
 Многие слышали ту горькую истину, что хотя у всех на слуху именно громкие истории успехов, но чаще всего стартапы заканчиваются неудачно. Мир венчура устроен таким образом, что это совершенно нормально для этой сферы деятельности. Ведь даже великий Томас Алва Эдисон как-то сказал: „Я не терпел поражений. Я просто нашёл 10 000 способов, которые не работают“.
@@ -13,7 +13,7 @@ image: "https://images.pexels.com/photos/7927389/pexels-photo-7927389.jpeg?auto=
 
 Поэтому мы включили в число наших кейсов и неудачные случаи из практики, чтобы вместе мы могли проанализировать причины проблем и не допустить их в будущем.
 
-![](https://images.pexels.com/photos/7927389/pexels-photo-7927389.jpeg?auto=compress&cs=tinysrgb&w=960){: width="960" height="350"}
+![](/uploads/pexels/960/pexels-photo-3771129.jpeg){: width="960" height="350"}
 
 ### Задача
 

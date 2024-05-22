@@ -10,7 +10,7 @@ image: "/uploads/picsum/43-600x450.jpg"
 
 Создание центра Fintech-компетенций для крупного финансового холдинга, создавшего первый в России кредитный робот.
 
-![](/uploads/picsum/43-960x350.jpg){: width="960" height="350"}
+![](/uploads/pexels/960/pexels-photo-8297447.jpeg){: width="960" height="350"}
 
 ### Задача
 
