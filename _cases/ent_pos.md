@@ -5,12 +5,12 @@ call_to_action: Contact
 date: 2017-06-10 00:00:00
 categories:
   - enterprise
-image: "https://images.pexels.com/photos/952594/pexels-photo-952594.jpeg?auto=compress&cs=tinysrgb&w=600&h=450"
+image: "/uploads/pexels/600/pexels-photo-952594.jpeg"
 ---
 
 Как можно «подружить» диплодока и мангуста?
 
-![](https://images.pexels.com/photos/952594/pexels-photo-952594.jpeg?auto=compress&cs=tinysrgb&w=960){: width="960" height="350"}
+![](/uploads/pexels/960/pexels-photo-952594.jpeg){: width="960" height="350"}
 
 ### Задача
 

@@ -5,14 +5,14 @@ call_to_action: Contact
 date: 2023-01-22 00:00:00
 categories:
   - startup
-image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600"
+image: "/uploads/pexels/600/pexels-photo-3184418.jpeg"
 ---
 
 Организация системы взаиморасчётов (юридически корректнее — взаимного учёта обязательств) участников сообщества на основе парадигмы децентрализованных финансов (DeFi) с использованием открытых решений и платформ (блокчейны Stellar, Tron, токены и смартконтракты).
 
 Разработка финансовой и юридической концепции, пакета юридических документов (основное соглашение, соглашение о противодействии нелегальному использованию и AML, Зrivacy policy, GPDR, Cookie consent etc), разработка роботов и смартконтрактов.
 
-![](https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=960){: width="960" height="350"}
+![](/uploads/pexels/960/pexels-photo-3184418.jpeg){: width="960" height="350"}
 
 ### Задача
 

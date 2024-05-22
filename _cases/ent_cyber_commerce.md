@@ -5,10 +5,12 @@ call_to_action: Contact
 date: 2018-08-10 00:00:00
 categories:
   - enterprise
-image: "https://unsplash.it/600/450?image=299&a=.png"
+image: "/uploads/picsum/299-600x450.jpg"
 ---
 
 Разработка автоматической системы принятия решений (киберцентра) для коммерческой службы компании из TOP20 российского Forbes.
+
+![](/uploads/picsum/299-2500x1644.jpg){: width="960" height="631"}
 
 ### Задача:
 

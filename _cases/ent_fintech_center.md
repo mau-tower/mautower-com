@@ -5,12 +5,12 @@ call_to_action: Contact
 date: 2013-06-10 00:00:00
 categories:
   - enterprise
-image: "https://unsplash.it/600/450?image=43&a=.png"
+image: "/uploads/picsum/43-600x450.jpg"
 ---
 
 Создание центра Fintech-компетенций для крупного финансового холдинга, создавшего первый в России кредитный робот.
 
-![](https://unsplash.it/960/350?image=43){: width="960" height="350"}
+![](/uploads/picsum/43-960x350.jpg){: width="960" height="350"}
 
 ### Задача
 

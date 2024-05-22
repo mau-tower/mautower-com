@@ -5,12 +5,12 @@ call_to_action: Contact
 date: 2023-07-15 00:00:00
 categories:
   - small
-image: "https://images.pexels.com/photos/4911142/pexels-photo-4911142.jpeg?auto=compress&cs=tinysrgb&w=600&h=450"
+image: "/uploads/pexels/600/pexels-photo-4911142.jpeg"
 ---
 
 Клиент — малый бизнес, услуги для яхт и яхтсменов.
 
-![](https://images.pexels.com/photos/4911142/pexels-photo-4911142.jpeg?auto=compress&cs=tinysrgb&w=960){: width="960" height="350"}
+![](/uploads/pexels/960/pexels-photo-4911142.jpeg){: width="960" height="350"}
 
 ### Задача
 

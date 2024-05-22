@@ -5,12 +5,12 @@ call_to_action: Contact
 date: 2020-08-16 00:00:00
 categories:
   - small
-image: "https://images.pexels.com/photos/7792855/pexels-photo-7792855.jpeg?auto=compress&cs=tinysrgb&w=600&h=450"
+image: "/uploads/pexels/600/pexels-photo-7792855.jpeg"
 ---
 
 К нам обратился человек, разработчик с такой ситуацией: он получил оффер от одной из российской IT-компаний в качестве разработчика программного обеспечения, ему предлагают заключить договор оказания услуг в качестве ИП и работать в таком статусе.
 
-![](https://images.pexels.com/photos/7792855/pexels-photo-7792855.jpeg?auto=compress&cs=tinysrgb&w=960){: width="960" height="350"}
+![](/uploads/pexels/960/pexels-photo-7792855.jpeg){: width="960" height="350"}
 
 ### Задача
 
