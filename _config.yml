@@ -38,7 +38,7 @@ collections:
      sort_by: navigation_order
    "cases":
      output: true
-     permalink: "/:collection/:slugified_categories/:name"
+     permalink: "/:collection/:categories/:name"
 
 defaults:
   -
