@@ -19,19 +19,19 @@ map:
 	<div class="column">
 		<p class="editor-link"><a href="cloudcannon:collections/_data/company.yml" class="btn"><strong>&#9998;</strong> Update Company Details</a></p>
 		{% if site.data.company.phone %}
-			<label>Phone Number</label>
+			<label>Телефон</label>
 			<p class="contact-info"><a href="tel:{{ site.data.company.phone }}" target="_blank">{{ site.data.company.phone }}</a></p>
 		{% endif %}
 		{% if site.data.company.contact_email_address %}
-			<label>Email Address</label>
+			<label>Email</label>
 			<p class="contact-info"><a href="mailto:{{ site.data.company.contact_email_address }}" target="_blank">{{ site.data.company.contact_email_address }}</a></p>
 		{% endif %}
 		{% if site.data.company.postal_address %}
-			<label>Postal Address</label>
+			<label>Почтовый адрес</label>
 			<address class="contact-info">{{ site.data.company.postal_address | replace: ',', '<br>' }}</address>
 		{% endif %}
 		{% if site.data.company.address %}
-			<label>Address</label>
+			<label>Адрес</label>
 			<address class="contact-info">{{ site.data.company.address | replace: ',', '<br>' }}</address>
 		{% endif %}
 	</div>
