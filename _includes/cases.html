@@ -1,5 +1,6 @@
 <ul class="staff-list">
-        {% for category in site.cases_categories %}
+        {% assign cases_categories = site.cases_categories | sort: "navigation_order" %}
+        {% for category in cases_categories %}
                 <li class="staff">
                         <div class="staff-details">
                                 <div class="staff-image">

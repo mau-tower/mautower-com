@@ -5,9 +5,8 @@ layout: page
 <div>{{ content }}</div>
 
 <ol class="post-list">
-	{% assign name = page.name | remove: ".md" %}
+	{% assign name = page.id | split: "/" | last %}
 	{% for case in site.cases %}
-		{{ page.name }}
 		{% if case.categories contains name %}
 			{% include case-summary.html post=case %}
 		{% endif %}
