@@ -7,7 +7,7 @@ layout: page
 <ol class="post-list">
 	{% assign name = page.name | remove: ".md" %}
 	{% for case in site.cases %}
-		{{ name }}
+		{{ page.name }}
 		{% if case.categories contains name %}
 			{% include case-summary.html post=case %}
 		{% endif %}
